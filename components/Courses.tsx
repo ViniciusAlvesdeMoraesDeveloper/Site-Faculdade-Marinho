@@ -91,7 +91,7 @@ const Courses = () => {
                 <ButtonLink
                   href="/cursos"
                   variant="default"
-                  aria-label={`Saiba mais sobre o curso ${featuredCourse.title}`} // Descrição para o leitor de tela e SEO
+                  aria-label={`Saiba mais sobre o curso ${featuredCourse.title}`}
                 >
                   Saiba Mais <ArrowRight className="ml-2 h-5 w-5" />
                 </ButtonLink>

@@ -15,20 +15,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-// ADIÇÃO: Defina a interface CourseSummary para os dados resumidos.
+
 interface CourseSummary {
   id: number;
   area: string;
   titulo: string;
 }
 
-// ADIÇÃO: Defina a interface Category
+
 interface Category {
   id: number;
   name: string;
 }
 
-// CORREÇÃO: A interface de props agora espera CourseSummary[] em vez de Course[]
+
 interface CursosClientComponentProps {
   courses: CourseSummary[];
   categories: Category[];

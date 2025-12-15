@@ -1,4 +1,4 @@
-"use client"; // Adicione esta linha para habilitar hooks do React
+"use client"; 
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, BookOpen, Target, Users, Smartphone } from "lucide-react";
@@ -15,7 +15,7 @@ const About = () => {
   const router = useRouter();
 
   const features = [
-    // ... (seus dados de features)
+    
     {
       icon: Award,
       title: "Tradição e Credibilidade",
@@ -39,7 +39,7 @@ const About = () => {
   ];
 
   const contactSections = [
-    // ... (seus dados de contato)
+    
     {
       title: "Pós-Graduação",
       contacts: [
@@ -121,7 +121,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* SEÇÃO DE CONTATOS AGRUPADA POR ÁREA */}
+         
           <div className="container mx-auto px-4 mt-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Fale com um de nossos consultores</h2>

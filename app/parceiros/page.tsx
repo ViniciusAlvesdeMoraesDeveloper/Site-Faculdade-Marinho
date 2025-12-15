@@ -65,7 +65,7 @@ export default function ParceirosPage() {
                 key={estado.nome}
                 className="relative"
                 itemScope
-                itemType="https://schema.org/Organization" // Schema para cada organização (estado)
+                itemType="https://schema.org/Organization" 
               >
                 <div className="flex items-center gap-3 mb-8">
                   <div className="flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-lg shadow-sm">

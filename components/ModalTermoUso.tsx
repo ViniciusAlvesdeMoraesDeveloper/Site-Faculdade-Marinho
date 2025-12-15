@@ -7,7 +7,7 @@ interface TermosDeUsoProps {
 const ModalTermosDeUso = ({ onClose }: TermosDeUsoProps) => {
     const contentRef = useRef<HTMLDivElement>(null);
 
-    // Função para impressão simples (fallback)
+   
     const handlePrint = () => {
         const printContent = contentRef.current;
         if (!printContent) return;
@@ -141,7 +141,7 @@ const ModalTermosDeUso = ({ onClose }: TermosDeUsoProps) => {
         <div className="fixed inset-0  bg-opacity-40 flex items-center justify-center p-4 z-50">
             <div ref={contentRef} className="bg-white p-6 rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative border-2 border-orange-100">
 
-                {/* Header com gradiente laranja */}
+                
                 <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-t-lg -m-6 mb-6 p-6">
                     <div className="flex items-center justify-between">
                         <div>
@@ -159,9 +159,9 @@ const ModalTermosDeUso = ({ onClose }: TermosDeUsoProps) => {
                     </div>
                 </div>
 
-                {/* Conteúdo do modal */}
+               
                 <div className="text-gray-800 space-y-6">
-                    {/* Seção de Introdução */}
+                   
                     <section className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
                         <h2 className="text-lg font-semibold text-orange-800 mb-2">Aceitação dos Termos</h2>
                         <p className="text-gray-700 leading-relaxed">
@@ -457,7 +457,7 @@ const ModalTermosDeUso = ({ onClose }: TermosDeUsoProps) => {
                     </section>
                 </div>
 
-                {/* MOVIDO PARA CÁ: Footer com botões de ação */}
+                
                 <div className="flex flex-col sm:flex-row justify-between items-center pt-6 mt-6 border-t border-orange-100 gap-4">
                     <div className="text-xs text-gray-500">
                         <p>Documento juridicamente válido - Conservar para referência futura</p>

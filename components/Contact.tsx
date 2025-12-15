@@ -22,8 +22,8 @@ const Contact = () => {
         <section
             id="contato"
             className="py-20 bg-background"
-            itemScope // Inicia o Schema Markup
-            itemType="https://schema.org/ContactPage" // Indica que a página é de contato
+            itemScope 
+            itemType="https://schema.org/ContactPage" 
         >
             <div className="container mx-auto px-4">
                 <header className="text-center mb-16">
@@ -42,7 +42,7 @@ const Contact = () => {
                                 key={index}
                                 className="w-full"
                                 itemScope
-                                itemProp="contactPoint" // Indica um ponto de contato dentro da página
+                                itemProp="contactPoint" 
                                 itemType="https://schema.org/ContactPoint"
                             >
                                 <Card className="flex group hover:shadow-orange transition-shadow border-none">

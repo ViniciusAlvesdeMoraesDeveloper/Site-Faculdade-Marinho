@@ -11,7 +11,7 @@ const ModalGeral = ({ title, content, onClose }: ModalProps) => {
   return (
     <div className="fixed inset-0  bg-opacity-40 flex items-center justify-center p-4 z-50">
       <div className="bg-white p-6 rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative border-2 border-orange-100">
-        {/* Header com gradiente laranja */}
+        
         <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-t-lg -m-6 mb-6 p-6">
           <div className="flex items-center justify-between">
             <div>
@@ -29,9 +29,9 @@ const ModalGeral = ({ title, content, onClose }: ModalProps) => {
           </div>
         </div>
 
-        {/* Conteúdo expandido e otimizado para SEO */}
+      
         <div className="text-gray-800 space-y-6">
-          {/* Seção de introdução */}
+          
           <section className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
             <h2 className="text-lg font-semibold text-orange-800 mb-2">Importância da Privacidade</h2>
             <p className="text-gray-700 leading-relaxed">
@@ -41,12 +41,12 @@ const ModalGeral = ({ title, content, onClose }: ModalProps) => {
             </p>
           </section>
 
-          {/* Conteúdo principal */}
+       
           <article className="prose prose-lg max-w-none">
             {content}
           </article>
 
-          {/* Seções adicionais */}
+         
           <section className="space-y-4">
             <h2 className="text-xl font-bold text-orange-700 border-b border-orange-200 pb-2">
               Coleta e Uso de Dados

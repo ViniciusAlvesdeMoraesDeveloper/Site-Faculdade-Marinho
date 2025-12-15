@@ -12,7 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { AlertCircle } from "lucide-react"
 
-// Esquema de validação do formulário com Zod
+
 const ouvidoriaSchema = z.object({
   nome: z.string().min(2, "Nome é obrigatório."),
   sobrenome: z.string().optional(),
@@ -68,15 +68,15 @@ export function OuvidoriaForm() {
     }
   }
 
-  // Lidar com a mudança no campo de telefone para formatá-lo
+ 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formattedValue = formatPhone(e.target.value)
     setValue("telefone", formattedValue)
   }
 
-  // Lidar com o envio do formulário
+  
   const handleFormSubmit = async (data: OuvidoriaFormData) => {
-    //Adicione a URL da Integrately aqui.
+    
     const INTEGRATELY_WEBHOOK_URL = 'https://webhooks.integrately.com/a/webhooks/218b90572fd4421d939c4c9ed8b0cbd1';
     try {
       const apiData = {

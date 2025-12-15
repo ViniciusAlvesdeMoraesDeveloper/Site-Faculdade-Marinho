@@ -6,25 +6,24 @@ import cursos from "../cursos.json";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
-import { OrganizationSchema } from '@/components/PartnerListSchema'; // Novo Schema
+import { OrganizationSchema } from '@/components/PartnerListSchema'; 
 
-// Definição do tipo para simplificar a extração dos dados
 type Curso = typeof cursos[0];
 
 type ParceiroProps = {
     params: { parceiroId: string };
 };
 
-// Função para gerar um slug seguro, removendo acentos e espaços
+
 const generateSlug = (text: string): string => {
     return text
         .toLowerCase()
-        .normalize("NFD") // Normaliza para remover diacríticos (acentos)
-        .replace(/[\u0300-\u036f]/g, "") // Remove os diacríticos
-        .replace(/\s/g, "-"); // Substitui espaços por hífens
+        .normalize("NFD") 
+        .replace(/[\u0300-\u036f]/g, "") 
+        .replace(/\s/g, "-"); 
 };
 
-// --- IMPLEMENTAÇÃO DO METADATA DINÂMICO ---
+
 export async function generateMetadata({ params }: ParceiroProps): Promise<Metadata> {
     const decodedParceiroId = decodeURIComponent(params.parceiroId);
     const parceiroSlug = generateSlug(decodedParceiroId);
@@ -44,20 +43,20 @@ export async function generateMetadata({ params }: ParceiroProps): Promise<Metad
         title: `Cursos em Parceria com ${nomeParceiro} | Sua Faculdade`,
         description: description,
         alternates: {
-            // URL Canônico: Essencial para rotas dinâmicas
-            canonical: `https://faculdademarinho.com.br/parceiros/${params.parceiroId}`, // SUBSTITUA PELO SEU DOMÍNIO
+            
+            canonical: `https://faculdademarinho.com.br/parceiros/${params.parceiroId}`, 
         },
     };
 }
 
 
-// --- COMPONENTE PRINCIPAL (COM INJEÇÃO DE SCHEMA) ---
+
 export default async function CursoPorParceiroPage({ params }: ParceiroProps) {
 
     const decodedParceiroId = decodeURIComponent(params.parceiroId);
     const parceiroSlug = generateSlug(decodedParceiroId);
 
-    // Filtra os cursos
+    
     const cursoDoParceiro: Curso[] = cursos.filter(curso => {
         return generateSlug(curso.partner) === parceiroSlug;
     });
@@ -68,19 +67,19 @@ export default async function CursoPorParceiroPage({ params }: ParceiroProps) {
 
     const nomeParceiro = cursoDoParceiro[0].partner;
 
-    // Extrai o primeiro contato para o Schema (assumindo que o primeiro é o principal)
+   
     const principalContact = cursoDoParceiro[0].contacts[0];
     const descriptionSchema = `Empresa parceira da faculdade, ${nomeParceiro} oferece cursos especializados em diversas áreas de atuação.`;
 
     return (
         <div className='flex flex-col min-h-screen'>
-            {/* INJEÇÃO DO SCHEMA DE ORGANIZAÇÃO AQUI */}
+           
             <OrganizationSchema
                 organizationName={nomeParceiro}
                 description={descriptionSchema}
                 phone={principalContact?.phone}
                 addressState={principalContact?.state}
-                type="EducationalOrganization" // Ou use "Organization" ou "LocalBusiness"
+                type="EducationalOrganization" 
             />
 
             <Header />

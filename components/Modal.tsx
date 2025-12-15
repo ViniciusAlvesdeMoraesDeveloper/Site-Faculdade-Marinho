@@ -12,7 +12,7 @@ import { toast } from "@/hooks/use-toast"
 import { GraduationCap, CheckCircle, AlertCircle, Send } from "lucide-react"
 
 
-// Esquema de validação do formulário com Zod
+
 const enrollmentSchema = z.object({
   name: z.string().min(2, "Nome deve ter pelo menos 2 caracteres"),
   email: z.string().email("Email inválido"),
@@ -49,7 +49,7 @@ export default function Modal({ isOpen, onClose}: ModalProps) {
     },
   })
 
-  // Função para formatar o telefone
+  
   const formatPhone = (value: string) => {
     let raw = value.replace(/\D/g, "")
     if (raw.length > 11) raw = raw.slice(0, 11)
@@ -61,16 +61,15 @@ export default function Modal({ isOpen, onClose}: ModalProps) {
     }
   }
 
-  // Lidar com a mudança no campo de telefone para formatá-lo
+  
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formattedValue = formatPhone(e.target.value)
     setValue("phone", formattedValue)
   }
 
-  // Função para enviar o formulário e lidar com a resposta da API
+  
   const handleSubmitForm = async (data: EnrollmentFormData) => {
     setIsSubmitting(true)
-//Colocar a URL da Integrately
   const INTEGRATELY_WEBHOOK_URL ='https://webhooks.integrately.com/a/webhooks/5bd023710825410384f1c0f5a999fa65';  
 
     try {

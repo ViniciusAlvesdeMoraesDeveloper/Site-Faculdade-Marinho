@@ -141,10 +141,10 @@ export default async function CourseDetailsPage({ params }: Props) {
   const finalDescription = course.descricao || generateDescription(course);
   const formattedDuration = formatDuration(course.titulo, course.duracao);
 
-  // PREPARAÇÃO DOS DADOS DE SEO ESTRUTURAL
+  
   const isoDuration = formatDurationToIso8601(course.titulo, course.duracao);
 
-  // Mapeamento do Nível Educacional (Ajuste conforme seus valores de 'area')
+  
   const educationalLevelMap: { [key: string]: string } = {
     'pós-graduação': 'Graduate',
     'graduação': 'College',
@@ -157,7 +157,7 @@ export default async function CourseDetailsPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
 
-      {/* INJEÇÃO DO COMPONENTE DE SCHEMA JSON-LD AQUI */}
+    
       <CourseSchema
         courseName={course.titulo || 'Curso'}
         courseDescription={finalDescription}
@@ -199,7 +199,7 @@ export default async function CourseDetailsPage({ params }: Props) {
               </p>
             </div>
 
-            {/* Lado Direito - Detalhes do Curso */}
+           
             <div className="w-full lg:w-2/5 p-8 bg-slate-50 rounded-xl">
               <h2 className="text-2xl font-semibold text-slate-900 mb-6 flex items-center gap-2">
                 <div className="w-1 h-6 bg-orange-600 rounded-full"></div>

@@ -10,19 +10,19 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 
 export default function CursosTecnicosPage() {
-    // Definimos um estado para controlar a quantidade de cards visíveis,
-    // começando com 6 cards.
+    
+    
     const [cardsVisible, setCardsVisible] = useState(6);
 
-    // Limitamos a exibição dos cards com base no estado `cardsVisible`
+   
     const cursosParaExibir = tecnicos.slice(0, cardsVisible);
 
-    // Verificamos se ainda há cards para carregar para exibir o botão
+    
     const temMaisCursos = tecnicos.length > cardsVisible;
 
-    // Função para carregar mais cards
+    
     const handleLoadMore = () => {
-        setCardsVisible(prev => prev + 6); // Adicionamos mais 6 cards
+        setCardsVisible(prev => prev + 6); 
     };
 
     return (
@@ -69,7 +69,7 @@ export default function CursosTecnicosPage() {
                         ))}
                     </div>
 
-                    {/* Botão "Carregar mais" visível apenas se houver mais cards */}
+                  
                     {temMaisCursos && (
                         <div className="mt-16 text-center">
                             <Button

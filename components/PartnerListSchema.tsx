@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Tipos para simplificar a passagem de dados do parceiro
+
 interface OrganizationSchemaProps {
     organizationName: string;
     description: string;
@@ -24,7 +24,7 @@ export const OrganizationSchema: React.FC<OrganizationSchemaProps> = ({
     "name": organizationName,
     "description": description,
     
-    // Adiciona contato se o teleone for fornecido
+    
     ...(phone && { 
         "contactPoint": {
             "@type": "ContactPoint",
@@ -33,7 +33,7 @@ export const OrganizationSchema: React.FC<OrganizationSchemaProps> = ({
         }
     }),
     
-    // Adiciona endereço se o estado for fornecido (usando StructuredValue)
+   
     ...(addressState && {
         "address": {
             "@type": "PostalAddress",
@@ -46,7 +46,7 @@ export const OrganizationSchema: React.FC<OrganizationSchemaProps> = ({
   };
 
   return (
-    // Usamos a tag <script> nativa para evitar o erro de resolução do next/script
+   
     <script
       id={`organization-schema-${organizationName.replace(/\s/g, '-')}`}
       type="application/ld+json"

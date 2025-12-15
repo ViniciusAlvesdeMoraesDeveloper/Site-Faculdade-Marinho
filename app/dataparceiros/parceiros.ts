@@ -4,31 +4,31 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Carlos Gonzaga Vieira",
-        contatos: [{ nome: "Carlos Gonzaga Vieira", telefone: "5531998594364" }],
+        contatos: [{ nome: "Carlos Gonzaga Vieira", telefone: "31998-5xx4364" }],
       },
       {
         nome: "Faculdade Iguaçu - Polo de Caris",
-        contatos: [{ nome: "Cleiton Cezar", telefone: "5531998980340" }],
+        contatos: [{ nome: "Cleiton Cezar", telefone: "31998-9xx0340" }],
       },
       {
         nome: "Olimar Lobato Garcia",
-        contatos: [{ nome: "Olimar Lobato Garcia", telefone: "5531988513942" }],
+        contatos: [{ nome: "Olimar Lobato Garcia", telefone: "31988-5xx3942" }],
       },
       {
         nome: "Andreza Silva",
-        contatos: [{ nome: "Andreza Silva", telefone: "5531983256247" }],
+        contatos: [{ nome: "Andreza Silva", telefone: "31983-2xx6247" }],
       },
       {
         nome: "Fabiana Matos da Silva",
-        contatos: [{ nome: "Fabiana Matos da Silva", telefone: "5531983256247" }],
+        contatos: [{ nome: "Fabiana Matos da Silva", telefone: "31983-2xx6247" }],
       },
       {
         nome: "Valdiane dos Santos Machado",
-        contatos: [{ nome: "Valdiane dos Santos Machado", telefone: "5531998102673" }],
+        contatos: [{ nome: "Valdiane dos Santos Machado", telefone: "31998-1xx2673" }],
       },
       {
         nome: "Faculdade Iguaçu",
-        contatos: [{ nome: "Alexandre Silva", telefone: "5531999803024" }],
+        contatos: [{ nome: "Alexandre Silva", telefone: "31999-8xx3024" }],
       },
     ],
   },
@@ -38,7 +38,7 @@ export const contatosPorEstado = [
       {
         nome: "Roberto Reis de Souza",
         contatos: [
-          { nome: "Roberto Reis de Souza", telefone: "5521974143903" },
+          { nome: "Roberto Reis de Souza", telefone: "21974-1xx3903" },
         ],
       },
     ],
@@ -48,7 +48,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Fabio Leandro Felix de Macedo",
-        contatos: [{ nome: "Fabio Leandro Felix de Macedo", telefone: "551999927725" }],
+        contatos: [{ nome: "Fabio Leandro Felix de Macedo", telefone: "19999-2xx725" }],
       },
     ],
   },
@@ -57,7 +57,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Fabricia de Santana Silva",
-        contatos: [{ nome: "Fabricia de Santana Silva", telefone: "5571988452331" }],
+        contatos: [{ nome: "Fabricia de Santana Silva", telefone: "71988-4xx2331" }],
       },
     ],
   },
@@ -66,7 +66,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Raimundo Silva",
-        contatos: [{ nome: "Raimundo Silva", telefone: "5579998276219" }],
+        contatos: [{ nome: "Raimundo Silva", telefone: "79998-2xx6219" }],
       },
     ],
   },
@@ -75,19 +75,19 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Tania Mara",
-        contatos: [{ nome: "Tania Mara", telefone: "5561992014020" }],
+        contatos: [{ nome: "Tania Mara", telefone: "61992-0xx4020" }],
       },
       {
         nome: "Ana Carolina Nogueira da Silva",
-        contatos: [{ nome: "Ana Carolina Nogueira da Silva", telefone: "5561994017321" }],
+        contatos: [{ nome: "Ana Carolina Nogueira da Silva", telefone: "61994-0xx7321" }],
       },
       {
         nome: "Daniela Pereira de Menezes",
-        contatos: [{ nome: "Daniela Pereira de Menezes", telefone: "5561992523293" }],
+        contatos: [{ nome: "Daniela Pereira de Menezes", telefone: "61992-5xx3293" }],
       },
       {
         nome: "Faculdade Iguaçu",
-        contatos: [{ nome: "Wemerson Silva", telefone: "5561985396593" }],
+        contatos: [{ nome: "Wemerson Silva", telefone: "61985-3xx6593" }],
       },
     ],
   },
@@ -96,11 +96,11 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Leticia Borges",
-        contatos: [{ nome: "Leticia Borges", telefone: "5564996238865" }],
+        contatos: [{ nome: "Leticia Borges", telefone: "64996-2xx8865" }],
       },
       {
         nome: "I G Educacional",
-        contatos: [{ nome: "Denilson de Oliveira", telefone: "5562998379440" }],
+        contatos: [{ nome: "Denilson de Oliveira", telefone: "62998-3xx9440" }],
       },
     ],
   },
@@ -109,7 +109,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Daltro Junior",
-        contatos: [{ nome: "Daltro Junior", telefone: "5567991587874" }],
+        contatos: [{ nome: "Daltro Junior", telefone: "67991-5xx7874" }],
       },
     ],
   },
@@ -118,7 +118,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Cleyton Luiz de Oliveira",
-        contatos: [{ nome: "Cleyton Luiz de Oliveira", telefone: "5541996843431" }],
+        contatos: [{ nome: "Cleyton Luiz de Oliveira", telefone: "41996-8xx3431" }],
       },
     ],
   },
@@ -127,23 +127,23 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Alcilena de Aguiar Lima",
-        contatos: [{ nome: "Alcilena de Aguiar Lima", telefone: "5594991732560" }],
+        contatos: [{ nome: "Alcilena de Aguiar Lima", telefone: "94991-7xx2560" }],
       },
       {
         nome: "Aline Cristina",
-        contatos: [{ nome: "Aline Cristina", telefone: "5594981144990" }],
+        contatos: [{ nome: "Aline Cristina", telefone: "94981-1xx4990" }],
       },
       {
         nome: "Maria do Socorro",
-        contatos: [{ nome: "Maria do Socorro", telefone: "5594992983277" }],
+        contatos: [{ nome: "Maria do Socorro", telefone: "94992-9xx3277" }],
       },
       {
         nome: "Reginaldo Ferreira do Nascimento",
-        contatos: [{ nome: "Reginaldo Ferreira do Nascimento", telefone: "5598981884488" }],
+        contatos: [{ nome: "Reginaldo Ferreira do Nascimento", telefone: "98981-8xx4488" }],
       },
       {
         nome: "Evelyn Ferreira da Silva",
-        contatos: [{ nome: "Evelyn Ferreira da Silva", telefone: "5594991280332" }],
+        contatos: [{ nome: "Evelyn Ferreira da Silva", telefone: "94991-2xx0332" }],
       },
     ],
   },
@@ -152,7 +152,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Elianay Patrícia Dantas",
-        contatos: [{ nome: "Elianay Patrícia Dantas", telefone: "5583996265007" }],
+        contatos: [{ nome: "Elianay Patrícia Dantas", telefone: "83996-2xx5007" }],
       },
     ],
   },
@@ -161,7 +161,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Juliana Santos da Silva",
-        contatos: [{ nome: "Juliana Santos da Silva", telefone: "5584999238128" }],
+        contatos: [{ nome: "Juliana Santos da Silva", telefone: "84999-2xx8128" }],
       },
     ],
   },
@@ -170,7 +170,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Andreza Silva",
-        contatos: [{ nome: "Andreza Silva", telefone: "5585987820790" }],
+        contatos: [{ nome: "Andreza Silva", telefone: "85987-8xx0790" }],
       },
     ],
   },
@@ -179,7 +179,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Clemildo Evangelista de Souza Neto",
-        contatos: [{ nome: "Clemildo Evangelista de Souza Neto", telefone: "5599984180436" }],
+        contatos: [{ nome: "Clemildo Evangelista de Souza Neto", telefone: "99984-1xx0436" }],
       },
     ],
   },
@@ -188,7 +188,7 @@ export const contatosPorEstado = [
     empresas: [
       {
         nome: "Fabiana Matos da Silva",
-        contatos: [{ nome: "Fabiana Matos da Silva", telefone: "5568999330999" }],
+        contatos: [{ nome: "Fabiana Matos da Silva", telefone: "68999-3xx0999" }],
       },
     ],
   },

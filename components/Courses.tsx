@@ -100,14 +100,14 @@ const Courses = () => {
           </Card>
         </article>
 
-        {/* Courses Grid with Semantic Markup */}
+        
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
           {courses.courses.map((course, index) => (
             <li
               key={index}
               itemScope
-              itemType="https://schema.org/Course" // Schema para cada curso
-              itemProp="itemListElement" // Indica que é um item da lista
+              itemType="https://schema.org/Course" 
+              itemProp="itemListElement" 
               role="listitem"
             >
               <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-none shadow-md">

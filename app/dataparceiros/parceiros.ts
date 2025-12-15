@@ -100,7 +100,7 @@ export const contatosPorEstado = [
       },
       {
         nome: "I G Educacional",
-        contatos: [{ nome: "Denilson de Oliveira", telefone: "62998-3xx9440" }],
+        contatos: [{ nome: "Denilson  de Oliveira", telefone: "62998-3xx9440" }],
       },
     ],
   },
